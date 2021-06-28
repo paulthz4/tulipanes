@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/paulthz4/tulipanes#readme",
   "dependencies": {
+    "animejs": "^3.2.1",
     "bootstrap": "^5.0.1"
   }
 }
