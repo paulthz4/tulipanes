@@ -18,6 +18,15 @@
         transform: translateY(17%);
     }
 }
+
+@keyframes lift{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
 body {
     font-family: 'Roboto', sans-serif, 'Noto Sans JP', Arial;
 }
@@ -57,15 +66,26 @@ img{
     height: auto;
 }
 th, td {
-    border: 1px solid black;
    padding: 1%;
 }
 table {
 /*    background-color: lightyellow;
 */    font-family: Verdana,Helvetica,Georgia;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid lightgrey;
     border-collapse: collapse;
+}
+
+td p {
+    text-indent: 45%;
+    margin: 2% 2%;
+    font-size: x-small;
+    text-align:left;
+}
+table:hover {
+    box-shadow: 1px 1px 7px;
+    animation: lift 1s forwards;
 }
