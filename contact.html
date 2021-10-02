@@ -11,16 +11,41 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" media="all">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of the restaurant 19.386058093347753, -99.14768869855826
+            const uluru = { lat: 19.3861, lng: -99.14768 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 18,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
 </head>
     <body id="b">
         <div class=" text orange mx-5 my-5 px-2 py-4" style="padding-top:25%;">
-            <h3 >Contacto</h3>
-            <p style="font-family: Arial, Helvetica, sans-serif;">C. Concepción Beistegui 2026, <br>Narvarte Poniente,<br> Benito Juárez,<br>
-                 03020 Ciudad de México, CDMX<br>
-                55 3415 0729</p>
+            <h3>Contacto</h3>
+            <p style="font-family: Arial, Helvetica, sans-serif;">
+                C. Concepción Beistegui 2026, <br>Narvarte Poniente,<br> Benito Juárez,<br>
+                03020 Ciudad de México, CDMX<br>
+                <a href="tel:55 3415 0729">55 3415 0729</a>
+            </p>
+        </div>
+        <div id="map">
+
         </div>
 
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKDXiFrcotxXy8S0h2hTGHKlurTUNiJ2A&callback=initMap&libraries=&v=weekly"  async>
+
+        </script>
     </body>
 
 </html>
