@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\bootstrap",
-    "\\bootstrap\\css",
     "\\css",
-    "\\images"
+    "\\public"
   ],
+  "SelectedNode": "\\contact.html",
   "PreviewInSolutionExplorer": false
 }

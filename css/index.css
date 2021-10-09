@@ -28,6 +28,18 @@
         /* border-color: grey; */
     }
 }
+@keyframes box{
+    0%{
+        border-bottom-color: black;
+    }
+    50%{
+        border-right-color: black;
+        border-left-color: black;
+    }
+    100%{
+        border: solid 1px black;
+    }
+}
 @font-face {
     font-family: 'Forte';
     src: url('http://www.fontsaddict.com/fontface/forte.ttf');
@@ -119,14 +131,17 @@ table:hover {
 .text{
     text-emphasis-color: black;
     color:black;
-    padding: auto auto auto 5%;
+    padding: 1em;
     margin:auto auto auto 45%;
     text-align: center;
     
 }
 #contact:hover{
-    font-weight: 600;
+/*    font-weight: 600;*/
     color:black;
+/*    border: solid 1px black;*/
+/*    animation: box 2s linear forwards;*/
+
 }
 #contact{
     float:left;
@@ -135,6 +150,12 @@ table:hover {
     width:fit-content;
     height:auto;
 }
+/*#button-box{
+    border-block-color: black;
+    border:solid 1px black;
+    width:fit-content;
+    height: auto
+}*/
 #map {
     height: 500px;
     width: 85%;
