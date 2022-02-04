@@ -47,6 +47,7 @@
       
 body {
     font-family: 'Forte','Roboto', sans-serif, 'Noto Sans JP', Arial;
+    max-width: 1680px;
 
 }
 #b{
@@ -107,6 +108,7 @@ table:hover {
     position:absolute;
     left: 85%;
     top: 5%;
+    max-width: 19in;
 }
 
 .ig-container a{
@@ -151,12 +153,12 @@ table:hover {
 
 #shadow a img{
     max-width: 100%;
-    width: 20%;
+    width: 10em;
     height:auto;
 }
 
 #logo-img{
-    max-width: 100%;
+    max-width: 1680px;
     width: 20%;
     height:auto;
     position: absolute;
