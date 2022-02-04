@@ -161,3 +161,9 @@ table:hover {
     width: 85%;
     margin:auto;
 }
+
+#shadow a img{
+    max-width: 100%;
+    width: 20%;
+    height:auto;
+}
